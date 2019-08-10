@@ -14,10 +14,10 @@ class PostCell: UITableViewCell {
     
     var post: Post!{
         didSet{
-            UpdateUI()
+            updateUI()
         }
     }
-    func UpdateUI(){
+    func updateUI(){
         userName.text=post.createdBy.userName
         timeAgoLabel.text=post.timeAgo
         captionLabel.text=post.caption
